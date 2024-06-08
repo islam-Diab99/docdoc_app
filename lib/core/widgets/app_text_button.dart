@@ -1,4 +1,4 @@
-import 'package:docdoc_app/core/theme/colors.dart';
+import '../theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -30,21 +30,21 @@ class AppTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: ButtonStyle(
-        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadius ?? 16.0),
           ),
         ),
-        backgroundColor: WidgetStatePropertyAll(
+        backgroundColor: MaterialStatePropertyAll(
           backgroundColor ?? ColorsManager.mainBlue,
         ),
-        padding: WidgetStateProperty.all<EdgeInsets>(
+        padding: MaterialStateProperty.all<EdgeInsets>(
           EdgeInsets.symmetric(
             horizontal: horizontalPadding?.w ?? 12.w,
             vertical: verticalPadding?.h ?? 14.h,
           ),
         ),
-        fixedSize: WidgetStateProperty.all(
+        fixedSize: MaterialStateProperty.all(
           Size(buttonWidth?.w ?? double.maxFinite, buttonHeight ?? 50.h),
         ),
       ),
