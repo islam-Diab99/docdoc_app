@@ -1,7 +1,6 @@
-import '../../../../core/theme/styles.dart';
+import 'package:docdoc_app/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 
 class DoctorImageAndText extends StatelessWidget {
   const DoctorImageAndText({super.key});

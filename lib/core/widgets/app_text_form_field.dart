@@ -1,6 +1,7 @@
-import '../theme/colors.dart';
-import '../theme/styles.dart';
+import '../theming/colors.dart';
+import '../theming/styles.dart';
 import 'package:flutter/material.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextFormField extends StatelessWidget {
@@ -15,7 +16,6 @@ class AppTextFormField extends StatelessWidget {
   final Color? backgroundColor;
   final TextEditingController? controller;
   final Function(String?) validator;
-
   const AppTextFormField({
     super.key,
     this.contentPadding,

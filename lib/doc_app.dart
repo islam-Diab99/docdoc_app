@@ -1,7 +1,8 @@
 
+import 'package:docdoc_app/core/theming/colors.dart';
+
 import 'core/routing/app_router.dart';
 import 'core/routing/routes.dart';
-import 'core/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

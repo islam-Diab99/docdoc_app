@@ -1,4 +1,4 @@
-import '../../../../core/theme/styles.dart';
+import 'package:docdoc_app/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 
 

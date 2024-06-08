@@ -1,8 +1,8 @@
 
-import '../../../../core/helpers/extentions.dart';
-import '../../../../core/routing/routes.dart';
-import '../../../../core/theme/colors.dart';
-import '../../../../core/theme/styles.dart';
+import 'package:docdoc_app/core/helpers/extensions.dart';
+import 'package:docdoc_app/core/routing/routes.dart';
+import 'package:docdoc_app/core/theming/colors.dart';
+import 'package:docdoc_app/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
