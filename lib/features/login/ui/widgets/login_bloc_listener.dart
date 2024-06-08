@@ -1,7 +1,8 @@
-import 'package:docdoc_app/core/helpers/extentions.dart';
+import 'package:docdoc_app/core/helpers/extensions.dart';
 import 'package:docdoc_app/core/routing/routes.dart';
-import 'package:docdoc_app/core/theme/colors.dart';
-import 'package:docdoc_app/core/theme/styles.dart';
+import 'package:docdoc_app/core/theming/colors.dart';
+import 'package:docdoc_app/core/theming/styles.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../logic/cubit/login_cubit.dart';

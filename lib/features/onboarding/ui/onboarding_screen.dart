@@ -1,7 +1,6 @@
-import '../../../core/theme/styles.dart';
+import 'package:docdoc_app/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'widgets/doc_logo_and_name.dart';
 import 'widgets/doctor_image_and_text.dart';
 import 'widgets/get_started_button.dart';

@@ -1,13 +1,14 @@
+import 'package:docdoc_app/core/routing/routes.dart';
 import 'package:docdoc_app/features/home/ui/home_screen.dart';
-
-import '../di/dependancy_injection.dart';
-import 'routes.dart';
-import '../../features/login/logic/cubit/login_cubit.dart';
-import '../../features/login/ui/login_screen.dart';
-import '../../features/onboarding/ui/onboarding_screen.dart';
+import 'package:docdoc_app/features/login/logic/cubit/login_cubit.dart';
+import 'package:docdoc_app/features/login/ui/login_screen.dart';
+import 'package:docdoc_app/features/onboarding/ui/onboarding_screen.dart';
+import 'package:docdoc_app/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../features/sign_up/ui/sign_up_screen.dart';
+import '../di/dependency_injection.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -26,7 +27,14 @@ class AppRouter {
             child: const LoginScreen(),
           ),
         );
-        case Routes.homeScreen:
+      case Routes.signUpScreen:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<SignupCubit>(),
+            child: const SignupScreen(),
+          ),
+        );
+      case Routes.homeScreen:
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
         );
